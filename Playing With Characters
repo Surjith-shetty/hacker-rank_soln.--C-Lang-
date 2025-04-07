@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    char ch, s[100], sen[100];
+    
+    scanf("%c", &ch);   // Read a single character
+    getchar();          // Consume the newline left by scanf
+    
+    fgets(s, sizeof(s), stdin);   // Read a single word or line
+    fgets(sen, sizeof(sen), stdin); // Read the full sentence
+
+    printf("%c\n", ch);  
+    printf("%s",s);
+    printf("%s",sen);
+    return 0;
+}
