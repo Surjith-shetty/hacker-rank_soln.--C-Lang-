@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+ {
+    char s[1000];
+    fgets(s,1000,stdin);
+    
+    int l=strlen(s);   //length of string entered
+    
+    for(int i=0;i<l;i++)
+    {
+        if(isalpha(s[i]))
+        {
+            printf("%c",s[i]);
+            continue;
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
